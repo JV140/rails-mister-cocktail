@@ -18,7 +18,7 @@ class CocktailsController < ApplicationController
     if @cocktail.save
       redirect_to cocktails_path
     else
-      render # RENDER WHAT? the New Form?
+      render :new
   end
 
   private
